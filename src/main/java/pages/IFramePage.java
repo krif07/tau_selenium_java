@@ -18,7 +18,7 @@ public class IFramePage {
         return driver.findElement(iFrameTitle).getText().trim();
     }
     private void switchToEditArea(){
-        driver.switchTo().frame(iFrameId).switchTo();
+        driver.switchTo().frame(iFrameId);
     }
     private void switchToMainArea(){
         driver.switchTo().parentFrame();
