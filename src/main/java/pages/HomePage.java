@@ -37,4 +37,9 @@ public class HomePage {
         clickLink("JavaScript Alerts");
         return new JavaScriptAlertsPage(driver);
     }
+
+    public FileUploadPage clickFileUpload(){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
 }
